@@ -1,2 +1,1 @@
 - Make a live & interactive hopper bus timetable. Currently, the university only has a static timetable with a PDF.
-- 
