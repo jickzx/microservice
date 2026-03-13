@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  gateway:
+    image: node:18
+    working_dir: /app
+    volumes:
+      - ./gateway:/app
+    command: node src/index.js
+
+  auth-service:
+    image: node:18
+    working_dir: /app
+    volumes:
+      - ./services/auth:/app
+    command: node dist/index.js
